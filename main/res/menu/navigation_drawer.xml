@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="single" >
+        <item
+            android:id="@+id/item1"
+            android:title="@string/menu_title_news"
+            android:icon="@drawable/news"/>
+        <item
+            android:id="@+id/item2"
+            android:title="@string/menu_title_announcement"
+            android:icon="@drawable/baseline_announcement_black_18dp"/>
+        <item
+            android:id="@+id/item4"
+            android:title="@string/menu_title_notes"
+            android:icon="@drawable/baseline_note_black_18dp" />
+        <item
+            android:id="@+id/item3"
+            android:title="@string/menu_title_exit"
+            android:icon="@drawable/outline_exit_to_app_black_18dp"/>
+    </group>
+
+</menu>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    app:startDestination="@id/item1">
+
+    <fragment
+        android:id="@+id/item1"
+        android:name="ovsyanik.project.fragment.NewsFragment"
+        android:label="news_fragment"
+        tools:layout="@layout/fragment_news" >
+        <action
+            android:id="@+id/btn_go_to_one_news"
+            app:destination="@id/fragment_selected_item" />
+        <argument
+            android:name="news"
+            app:argType="ovsyanik.project.data.News" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/item2"
+        android:name="ovsyanik.project.fragment.AnnouncementsFragment"
+        android:label="fragment_announcements"
+        tools:layout="@layout/fragment_announcements" >
+        <action
+            android:id="@+id/btn_go_to_one_news"
+            app:destination="@id/fragment_selected_item" />
+        <argument
+            android:name="announcement"
+            app:argType="ovsyanik.project.data.Announcement" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/item4"
+        android:name="ovsyanik.project.fragment.NotesFragment"
+        android:label="fragment_notes"
+        tools:layout="@layout/fragment_notes"/>
+
+    <fragment
+        android:id="@+id/fragment_selected_item"
+        android:name="ovsyanik.project.fragment.SelectedItemFragment"
+        android:label="fragment_selected_item"
+        tools:layout="@layout/fragment_selected_item" />
+
+</navigation>

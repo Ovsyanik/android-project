@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FitBorad</string>
+    <string name="menu_title_news">Новости</string>
+    <string name="menu_title_announcement">Объявления</string>
+    <string name="menu_title_exit">Выйти</string>
+    <string name="menu_title_notes">Заметки</string>
+</resources>
